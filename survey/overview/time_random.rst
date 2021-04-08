@@ -1,34 +1,75 @@
 ============================
-Time and Randomize Questions
+Timed & randomized questions
 ============================
 
-Time Limit
-==========
+Timed
+=====
 
-| On timed surveys, respondents need to complete the survey within a certain period of time. It can
-  be used to ensure that all respondents get the same amount of time to find the answers, or to
-  decrease the chance of having them looking at external resources.
-| Set the *Time limit* under the tab *Options*.
+With timed surveys, participants must complete the survey within a predetermined amount of time.
+You can apply the same time limit feature to individual questions, as well.
 
-.. image:: media/tab_options_timelimit.png
+Timed surveys and questions ensure that all participants get the same amount of time to
+answer and complete the survey. They also discourage participants from looking up answers with
+external sources.
+
+Timed surveys
+-------------
+
+To set a time limit on a survey, go to the survey template page, go to
+:menuselection:`Options Tab --> Survey Time Limit`, and enter in your desired time limit (in
+minutes).
+
+.. image:: time_random/options-tab-time-limit.png
    :align: center
    :alt: View of a survey form emphasizing the time limit feature in Odoo Surveys
 
-A timer is shown on the pages so the user can keep track of the remaining time. Surveys not \
-submitted by the *Time limit* do not have their answers saved.
+Before participants begin, they will see how much allotted time they have to complete the survey.
+During the survey, a timer is shown on the pages so the user can keep track of the remaining time.
 
-Selection
-=========
-
-| When you randomize a survey, you allow for the questions to be shuffled in a random order every
-  time someone opens the questionnaire. This can be useful to avoid having respondents looking at
-  each others' answers.
-| To do so, under the tab *Options*, enable *Randomized per section*. Now, under the tab *Questions*,
-  set how many of the questions in that section should be taken into account during the shuffling.
-
-.. image:: media/random_question.png
+.. image:: time_random/time-limit-survey-clock.png
    :align: center
-   :alt: View of a survey form emphasizing the random questions count column in Odoo Surveys
+   :alt: survey time limit clock display front-end
+
+.. note::
+   Surveys that are not submitted in time **do not** have their answers saved.
+
+Timed questions (in Live Sessions only)
+---------------------------------------
+
+Timed questions are only available during Live Session surveys.
+
+To put a time limit on a specific question, simply click the question you wish to modify, and go to
+:menuselection:`Options Tab --> Question Time Limit`. At that point, you can specify the time
+limit (in seconds).
+
+.. image:: time_random/question-time-limit.png
+   :align: center
+   :alt: survey question time limit
+
+Random
+======
+
+When a survey is randomized, the questions will be shuffled in a random order every time a
+participant opens the survey. Random surveys are a great way to eliminate the possibility of
+participants copying off one another.
+
+Random surveys
+--------------
+
+To randomize a survey, go to
+:menuselection:`Options Tab (of the survey) --> Randomized per section`.
+
+.. image:: time_random/randomized-per-section.png
+   :align: center
+   :alt: survey randomized per section option
+
+Once you've enabled that feature, go to the *Questions* tab of the survey. A
+*Random questions count* column is now present. Here you can decide how many of the questions
+should be taken into account during the shuffling.
+
+.. image:: time_random/random-questions-count.png
+   :align: center
+   :alt: survey random questions count
 
 .. seealso::
     - :doc:`scoring`

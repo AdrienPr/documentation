@@ -5,6 +5,6 @@ Overview
 .. toctree::
    :titlesonly:
 
-   overview/create
+   overview/survey_essentials
    overview/scoring
    overview/time_random

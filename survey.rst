@@ -1,8 +1,8 @@
 :banner: banners/survey.png
 
-======
-Survey
-======
+=======
+Surveys
+=======
 
 .. toctree::
    :titlesonly:

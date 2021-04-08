@@ -1,36 +1,45 @@
 ===============
-Scoring Surveys
+Scoring surveys
 ===============
 
-To measure your respondent’s performance, knowledge of a subject, or overall satisfaction, attach
-points to the answers of specific questions. The points are summed up to give your respondent a
-final score.
+Surveys are a great way to measure a person's performance, knowledge of a subject, or overall
+satisfaction.
 
-On your survey’s form, click on *Add a question* and, under the tab *Options*, choose between
-*Scoring with answers at the end* or *Scoring without answers at the end*. Now, on your question’s
-form, set the right answer and score.
+Odoo allows you to attach points to certain answers of survey questions. These points are then
+summed up to give your participant a final score.
 
-.. image:: media/answers_form.png
+Scoring configuration
+=====================
+
+Under the *Options* tab on a survey detail form, users have the option to choose between:
+*Scoring with answers at the end* **or** *Scoring without answers at the end*.
+
+.. image:: scoring/survey-options-tab.png
    :align: center
-   :alt: Form view of a survey showing a list of answers in Odoo Surveys
+   :alt: survey option template tab
 
-Set the percentage score the user needs to achieve to have successfully taken the survey. If
-enabling *Certificate*, choose its template. The certification is automatically sent by email to the
-users who successfully finish it.
+You can set the "*Success %*" here, as well. The "*Success %*" is the score the user will need to
+achieve in order to have successfully taken the survey.
 
-.. image:: media/scoring_candidates.png
+.. image:: scoring/survey-success-percentage.png
    :align: center
-   :alt: Form view of a survey emphasizing the scoring and candidates section in Odoo Surveys
+   :alt: survey success percentage setting
 
-Enable *Login required* to be able to *Give Badges*. Badges are related to the eLearning section of
-your website. Besides the logged-in user, visitors of the website that access the page *Courses*
-can also see the granted badges.
+If "*Is a Certification*" is selected, you can choose its template. The certification is
+automatically emailed to users who have successfully finished the survey.
 
-.. image:: media/frontend_bagdes.png
+.. image:: scoring/survey-certification-template-setting.png
    :align: center
-   :alt: View of the courses tab emphasizing the latest achievements section on the website for
-         Odoo Surveys
+   :alt: survey certification template setting
 
-.. seealso::
-   - :doc:`time_random`
+.. note::
+   The *Give Badge* feature is **only** available if you enable *Login required* in the
+   *Candidates* section of the *Options* tab of the survey detail form.
 
+Then, choose a survey question you want to assign a point value to, and mark which answer is
+"correct" on the question pop-up. You can also apply negative point results for "incorrect"
+answers, as well.
+
+.. image:: scoring/answers-questions-points.png
+   :align: center
+   :alt: answer tab of survey with questions and points
